@@ -1,0 +1,92 @@
+@charset "utf-8" ;
+
+.page{
+    width: 500px;
+    height: 200px;
+    border : 1px solid #ccc ;
+    -webkit-box-shadow: 0px 0px 5px #ddd;
+    -o-box-shadow: 0px 0px 5px #ddd;
+    -moz-box-shadow: 0px 0px 5px #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+    margin: 100px auto;
+    padding: 5px;
+    overflow: hidden;
+   
+}
+@keyframes wap{
+    0%{top: 0; left: 0;}
+    10%{top: 0; left: -200px;}
+    20%{top: 0; left: 0;}
+    100%{top: 0; left: 0;}
+}
+
+.img{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 5px;
+    position: relative;
+    -webkit-animation: wap 4s infinite;
+    -moz-animation: wap 4s infinite;
+    -o-animation: wap 4s infinite;
+    animation: wap 4s infinite;
+   
+}
+.img , .header-first, .header-nd, .btn{
+    float: left;
+}
+
+.header-first, .header-nd{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header-first{
+    margin: 5px;
+    position: relative;
+    top: -200px;
+    left: 0;
+    -webkit-animation: header-first 3s infinite;
+    -o-animation: header-first 3s infinite;
+    -moz-animation: header-first 3s infinite;
+    animation: header-first 3s infinite;
+    animation-delay: 0.6s;
+}
+@keyframes header-first{
+    10%{top: 0; left: 0;}
+    100%{top: 0; left: 0;}
+
+}
+
+.header-nd{
+    margin-left: 60px;
+    margin-top: 10px;
+    position: relative;
+    top: -200px;
+    left: 0;
+    -webkit-animation: header-first 3s infinite;
+    -o-animation: header-first 3s infinite;
+    -moz-animation: header-first 3s infinite;
+    animation: header-first 3s infinite;
+    animation-delay: 1s;
+}
+
+.btn{
+    background: inherit;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 80px;
+    top: 200px;
+    left: 0;
+    position: relative;
+    -webkit-animation: btn 3s infinite;
+    -o-animation: btn 3s infinite;
+    -moz-animation: btn 3s infinite;
+    animation: btn 3s infinite;
+    animation-delay: 1s;
+}
+@keyframes btn{
+    10%{top: 0; left: 0;}
+    100%{top: 0; left: 0;}
+}
